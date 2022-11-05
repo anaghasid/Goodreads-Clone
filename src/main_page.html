@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Goodreads</title>
+    <link rel="stylesheet" href="style4.css">
+    <script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+</head>
+<body>
+
+<header id="header" class="fixed-top">
+</header>
+
+<div class="book_list">
+  <h2> Popular books of 2022 </h2>
+  
+  <div class="book1"> 
+      <p id="title">The Alchemist</p> 
+      <!-- <img src="alchemist.jpg" alt="alchemist" id="book_img"> -->
+      <!-- <p id="description">Combining magic, mysticism, wisdom and wonder into an inspiring tale of self-discovery, 
+          The Alchemist has become a modern classic, selling millions of copies around the world and transforming the lives of 
+          countless readers across generations.
+          Paulo Coelho's masterpiece tells the mystical story of Santiago, 
+          an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. 
+          His quest will lead him to riches far different—and far more satisfying—than he ever imagined. 
+          Santiago's journey teaches us about the essential wisdom of listening to our hearts, 
+          of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams. 
+        </p> -->
+          <div class="gr_custom_rating_">
+            <span class=" staticStars notranslate" title="it was amazing">
+                <img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
+                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
+                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
+                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
+                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
+            </span>
+          </div>
+  </div>
+
+
+  <div class="book1"> 
+      <p id="title">Harry Potter</p> 
+      <!-- <img src="alchemist.jpg" alt="alchemist" id="book_img"> -->
+      <p id="description">
+          Idk, you should know who Harry Potter is 
+      </p>
+  </div>
+
+  <div class="book1"> 
+      <p id="title">Five Ways to Succeed </p> 
+      <!-- <img src="alchemist.jpg" alt="alchemist" id="book_img"> -->
+      <p id="description">
+          1. Be consistent <br>
+          2. Do your web tech project before it's too late <br>
+          3. Do not procrastinate
+      </p>
+  </div>
+</div>
+
+<div id="i01"> </div>
+<script type="text/babel">
+  class Top extends React.Component
+  {
+
+    render(){
+    return(
+      <div id="top_elements" class="top_elements order-last order-lg-0">
+<ul>
+  <li><p class="div-link">Home</p></li>
+  <li><p class="div-link">My books</p></li>
+  <li class="dropdown"><p><span>Browse by genre</span></p>
+    <ul>
+      <li>Autobiography</li>
+      <li class="dropdown"><p><span>Fiction</span></p>
+        <ul>
+          <li>Fantasy</li>
+          <li>Literary Fiction</li>
+          <li>Romance</li>
+          <li> Thrillers</li>
+        </ul>
+      </li>
+      <li>Self help</li>
+      <li>Mystery</li>
+      <li>Poetry</li>
+    </ul>
+  </li>
+  <li><p class="div-link" href="#contact">Contact</p></li>
+
+<i class="bi bi-list mobile-nav-toggle"></i>
+<li><p class="sign_up-btn">Sign up or login</p></li>
+</ul>
+</div>);
+  }
+  }
+  ReactDOM.render(<Top/>, document.getElementById('header'));
+</script>
+</body>
+</html>
