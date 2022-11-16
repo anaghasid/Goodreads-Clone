@@ -10,5 +10,16 @@ for(let i = 0; i < users.length; i++)
     author[i] = users[i].Author;
     description[i] = users[i].Description;
 }
+// console.log(bookname);
 
 
+// props and this.props.i??
+function GiveBooks({i})
+{
+    var i = parseInt({i});  
+    return(
+        description[i]
+    )
+}
+
+export default GiveBooks;

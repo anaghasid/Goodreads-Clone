@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Goodreads</title>
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="index.css">
     <script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
 		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
 		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
@@ -28,13 +28,8 @@
           of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams. 
         </p> -->
           <div class="gr_custom_rating_">
-            <span class=" staticStars notranslate" title="it was amazing">
-                <img alt="it was amazing" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
-                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
-                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
-                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
-                <img alt="" src="https://s.gr-assets.com/images/layout/gr_red_star_active.png" />
-            </span>
+            <div id="dynStars" title="it was amazing">
+            </div>
           </div>
   </div>
 
@@ -43,8 +38,12 @@
       <p id="title">Harry Potter</p> 
       <!-- <img src="alchemist.jpg" alt="alchemist" id="book_img"> -->
       <p id="description">
+      <!-- <p id="description">
           Idk, you should know who Harry Potter is 
       </p>
+      </p> -->
+      <div id="dynStars" title="it was amazing">
+      </div>
   </div>
 
   <div class="book1"> 
@@ -55,45 +54,11 @@
           2. Do your web tech project before it's too late <br>
           3. Do not procrastinate
       </p>
+      <div id="dynStars" title="it was amazing">
+      </div>
   </div>
 </div>
 
 <div id="i01"> </div>
-<script type="text/babel">
-  class Top extends React.Component
-  {
-
-    render(){
-    return(
-      <div id="top_elements" class="top_elements order-last order-lg-0">
-<ul>
-  <li><p class="div-link">Home</p></li>
-  <li><p class="div-link">My books</p></li>
-  <li class="dropdown"><p><span>Browse by genre</span></p>
-    <ul>
-      <li>Autobiography</li>
-      <li class="dropdown"><p><span>Fiction</span></p>
-        <ul>
-          <li>Fantasy</li>
-          <li>Literary Fiction</li>
-          <li>Romance</li>
-          <li> Thrillers</li>
-        </ul>
-      </li>
-      <li>Self help</li>
-      <li>Mystery</li>
-      <li>Poetry</li>
-    </ul>
-  </li>
-  <li><p class="div-link" href="#contact">Contact</p></li>
-
-<i class="bi bi-list mobile-nav-toggle"></i>
-<li><p class="sign_up-btn">Sign up or login</p></li>
-</ul>
-</div>);
-  }
-  }
-  ReactDOM.render(<Top/>, document.getElementById('header'));
-</script>
 </body>
 </html>

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Stars from './Stars'
 import reportWebVitals from './reportWebVitals';
+import GiveBooks from './BookInfo';
 
 const root1 = ReactDOM.createRoot(document.getElementById('header'));
 root1.render(
@@ -18,6 +19,12 @@ root2.render(
     <Stars />
   </React.StrictMode>
 );
+
+const root3 = ReactDOM.createRoot(document.getElementById("description"));
+root3.render(
+  // <React.StrictMode></React.StrictMode>
+  <GiveBooks i="0"> </GiveBooks>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
