@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,372 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+body
+{
+   background-color: rgb(255, 251, 217);
+   font-family: "Open Sans", sans-serif;
 }
+.top_elements {
+padding: 0;
+background-color: #ffbb38;
+
+}
+
+.top_elements ul {
+/* margin: 0; */
+/* padding: 0;  */
+top: 0; 
+overflow: hidden;
+background-color: #ffbb38;
+display: flex;
+justify-content: center;
+list-style: none;
+align-items: center;
+}
+
+.top_elements li {
+text-align: center;
+position: relative;
+}
+
+.top_elements p,
+.top_elements p:focus {
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+padding: 10px 0 10px 30px;
+font-size: 15px;
+font-weight: 600;
+white-space: nowrap;
+}
+
+.top_elements p i,
+.top_elements p:focus i {
+font-size: 12px;
+line-height: 0;
+margin-left: 5px;
+}
+
+.top_elements p:hover,
+.top_elements .active,
+.top_elements .active:focus,
+.top_elements li:hover>p {
+background-color: rgb(154, 11, 11);
+color: bisque;
+
+}
+
+/*.top_elements .dropdown ul {
+display: block;
+position: absolute;
+left: 14px;
+top: calc(100% + 30px);
+margin: 0;
+padding: 10px 0;
+z-index: 99;
+opacity: 0;
+background: #fff;
+box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.top_elements .dropdown ul li 
+{
+min-width: 200px;
+}
+.top_elements .dropdown ul p {
+padding: 10px 20px;
+font-size: 14px;
+text-transform: none;
+color: #151515;
+font-weight: 400;
+}
+.top_elements .dropdown ul p i {
+font-size: 12px;
+}
+@media (max-width: 1366px) {
+.top_elements .dropdown .dropdown ul {
+left: -90%;
+}
+.top_elements .dropdown .dropdown:hover>ul {
+left: -100%;
+}
+}
+.top_elements .dropdown ul p:hover,
+.top_elements .dropdown ul .active:hover,
+.top_elements .dropdown ul li:hover>p {
+background-color: #ffc451;
+}
+.top_elements .dropdown:hover>ul {
+opacity: 1;
+top: 100%;
+visibility: visible;
+}
+.top_elements .dropdown .dropdown ul {
+top: 0;
+left: calc(100% - 30px);
+visibility: hidden;
+}
+.top_elements .dropdown .dropdown:hover>ul {
+opacity: 1;
+top: 0;
+left: 100%;
+visibility: visible;
+} */
+
+.top_elements .dropdown ul {
+   display: block;
+   position: absolute;
+   left: 14px;
+   top: calc(100% + 30px);
+   margin: 0;
+   padding: 10px 0;
+   z-index: 99;
+   opacity: 0;
+   visibility: hidden;
+   background: #fff;
+   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+ }
+ 
+ .top_elements .dropdown ul li {
+   min-width: 200px;
+ }
+ 
+ .top_elements .dropdown ul p {
+   padding: 10px 20px;
+   font-size: 14px;
+   text-transform: none;
+   color: #151515;
+   font-weight: 400;
+ }
+ 
+ .top_elements .dropdown ul p i {
+   font-size: 12px;
+ }
+ 
+ .top_elements .dropdown ul p:hover,
+ .top_elements .dropdown ul .active:hover,
+ .top_elements .dropdown ul li:hover>p {
+   background-color: #ffc451;
+ }
+ 
+ .top_elements .dropdown:hover>ul {
+   opacity: 1;
+   top: 100%;
+   visibility: visible;
+ }
+ 
+ .top_elements .dropdown .dropdown ul {
+   top: 0;
+   left: calc(100% - 30px);
+   visibility: hidden;
+ }
+ 
+ .top_elements .dropdown .dropdown:hover>ul {
+   opacity: 1;
+   top: 0;
+   left: 100%;
+   visibility: visible;
+ }
+ 
+ @media (max-width: 1366px) {
+   .top_elements .dropdown .dropdown ul {
+     left: -90%;
+   }
+ 
+   .top_elements .dropdown .dropdown:hover>ul {
+     left: -100%;
+   }
+ }
+
+.top_elements .sign_up-btn {
+color: #fff;
+display: flex;
+border-radius: 4px;
+margin-left: 3em;
+padding: 7px 25px 8px 25px;
+white-space: nowrap;
+font-size: 14px;
+display: inline-block;
+border: 2px solid #ffc451;
+}
+
+.sign_up-btn:hover {
+background: #ffbb38;
+color: #343a40;
+}
+
+@media (max-width: 992px) {
+.get-started-btn {
+padding: 7px 20px 8px 20px;
+margin-right: 15px;
+}
+}
+/* ------------ */
+
+#hero {
+width: 100%;
+height: 100vh;
+background-size: cover;
+position: relative;
+}
+
+#hero:before {
+content: "";
+background: rgba(205, 201, 97, 0.6);
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+#hero .container {
+position: relative;
+padding-top: 74px;
+text-align: center;
+}
+
+#hero h1 {
+margin: 0;
+font-size: 56px;
+font-weight: 700;
+line-height: 64px;
+font-family: "Poppins", sans-serif;
+}
+
+
+
+#hero h2 {
+margin: 10px 0 0 0;
+font-size: 24px;
+}
+
+#hero .icon-box {
+padding: 30px 20px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+height: 100%;
+text-align: center;
+}
+
+#hero .icon-box i {
+font-size: 32px;
+line-height: 1; 
+}
+
+#hero .icon-box h3 {
+font-weight: 700;
+margin: 10px 0 0 0;
+padding: 0;
+line-height: 1;
+font-size: 20px;
+line-height: 26px;
+}
+
+
+#hero .icon-box h3 p:hover {
+color: #ffc451;
+}
+
+#hero .icon-box:hover {
+border-color: #ffc451;
+}
+
+@media (min-width: 1024px) {
+#hero {
+background-attachment: fixed;
+}
+}
+
+@media (max-width: 768px) {
+#hero {
+height: auto;
+}
+
+#hero h1 {
+font-size: 28px;
+line-height: 36px;
+}
+
+#hero h2 {
+font-size: 20px;
+line-height: 24px;
+}
+}
+
+.book_list
+{
+   display: flex;
+   margin-top: 5%;
+   margin-left: 5%;
+   flex-direction: column;
+   border: 3px solid;
+   justify-content: center;
+   width: 50%;
+}
+.book1
+{
+   display: flex;
+}
+#title
+{
+   background-color: rgb(216, 186, 164);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   width: 100px;
+   display: block;
+}
+
+#description
+{
+   margin-left: 2%;
+   align-self: flex-end;
+}
+.gr_custom_container_ {
+   /* customize your Goodreads widget container here*/
+   display: flex;
+   align-items: center;
+   margin-left: 30%;
+   flex-direction: column;
+   border-radius:10px;
+   padding: 10px 5px 10px 5px;
+   background-color: beige;
+   color: #000;
+   width: 40%;
+ }
+ .gr_custom_header_ {
+   
+   width: 100%;
+   margin-bottom: 5px;
+   text-align: center;
+   font-size: 120%
+ }
+ .gr_custom_each_container_ {
+   /* customize each individual book container here */
+   width: 100%;
+   clear: both;
+   margin-bottom: 10px;
+   overflow: auto;
+   padding-bottom: 4px;
+   
+ }
+ .gr_custom_book_container_ {
+   /* customize your book covers here */
+   overflow: hidden;
+   height: 60px;
+     float: center;
+     margin-right: 4px;
+     width: 39px;
+ }
+ .gr_custom_author_ {
+   /* customize your author names here */
+   font-size: 10px;
+ }
+ .gr_custom_tags_ {
+   /* customize your tags here */
+   font-size: 10px;
+   color: gray;
+ }
+ .gr_custom_rating_ {
+   /* customize your rating stars here */
+   float: right;
+ }
