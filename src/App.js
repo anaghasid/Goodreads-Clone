@@ -1,39 +1,11 @@
-/*import './App.css';
-
-import React from "react";
-import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"; //browser router is used for saving history.
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact"
-import StyledLink from './style';
-class App extends React.Component{
-	render(){
-		return(
-			<Router>
-				<div> <StyledLink to ="/"> Home</StyledLink></div>
-				<div> <StyledLink to ="/about"> About</StyledLink></div>
-				<div> <StyledLink to ="/contact"> Contact</StyledLink></div>
-			<Routes>
-				<Route exact path="/" element={<Home/>}/>
-				<Route path="/about" element={<About/>}/>
-				<Route path="/contact" element={<Contact/>}/>
-			</Routes>	
-			</Router>
-		)
-	}
-}
-export default App;*/
-
-
-// export default Top;*/
-
 
 import './App.css';
 import React from "react";
-import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"; //browser router is used for saving history.
+import { BrowserRouter as Router,Route,Routes,Link} from "react-router-dom"; //browser router is used for saving history.
 import Home from "./Home";
 import Contact from "./Contact"
 import StyledLink from './style';
+import Form from './Form.js';
 
 class App extends React.Component{
 	render(){
@@ -59,15 +31,16 @@ class App extends React.Component{
     <li>Poetry</li>
   </ul>
 </li>
-<li><p class="div-link" href="#contact"><StyledLink to ="/">Contact</StyledLink></p></li>
+<li><p class="div-link" href="#contact"><StyledLink to ="/contact">Contact</StyledLink></p></li>
 
 <i class="bi bi-list mobile-nav-toggle"></i>
-<li><p class="sign_up-btn">Sign up or login</p></li>
+<li><p class="sign_up-btn"><StyledLink to ="/signup">Sign up or login</StyledLink></p></li>
 </ul>
 </div>
 <Routes>
 				<Route exact path="/" element={<Home/>}/>
 				<Route path="/contact" element={<Contact/>}/>
+				<Route path="/signup" element={<Form/>}/>
 				</Routes>
 				</Router>
 		)

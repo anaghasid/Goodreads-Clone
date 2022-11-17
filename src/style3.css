@@ -46,7 +46,6 @@ margin-left: 5px;
 }
 
 .top_elements p:hover,
-.top_elements .active,
 .top_elements .active:focus,
 .top_elements li:hover>p {
 background-color: rgb(154, 11, 11);

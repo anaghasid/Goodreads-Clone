@@ -1,3 +1,4 @@
+// App, Stars are used here
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
