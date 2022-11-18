@@ -5,8 +5,11 @@ import { BrowserRouter as Router,Route,Routes,Link} from "react-router-dom"; //b
 import Home from "./Home";
 import Contact from "./Contact"
 import StyledLink from './style';
-import Form from './Form.js';
+import Login from './Login';
+// import Form from './Form.js';
 
+
+// has navbar,
 class App extends React.Component{
 	render(){
   return(
@@ -40,7 +43,8 @@ class App extends React.Component{
 <Routes>
 				<Route exact path="/" element={<Home/>}/>
 				<Route path="/contact" element={<Contact/>}/>
-				<Route path="/signup" element={<Form/>}/>
+				<Route path="/signup" element={<Login/>}/>
+				{/* <Route path="/signup" element={<Form/>}/>  */}
 				</Routes>
 				</Router>
 		)
