@@ -1,61 +1,84 @@
+/*import './App.css';
+
 import React from "react";
-import "./Home.css"
-class Home extends React.Component{
-
-  render(){
-    return(
-      <div>
-          <h2> Recommended Books For You </h2>
-
-
-
-  <div class="book1"> 
-      <p id="title">It starts with us</p> 
-      <p id="author">Colleen Hoover</p>
-      <img class="book1" src="ends.jpg" id="book_img"></img>
-      <p id="description">Switching between the perspectives of Lily and Atlas, It Starts with Us picks up right where the epilogue for the “gripping, pulse-pounding” (Sarah Pekkanen, author of Perfect Neighbors) bestselling phenomenon It Ends with Us left off. Revealing more about Atlas’s past and following Lily as she embraces a second chance at true love while navigating a jealous ex-husband</p>
-      <div id="dynStars" title="it was amazing">
-      </div>
-  </div>
-
-  <div class="book1"> 
-      <p id="title">The song of Achilles</p> 
-      <p id="author">Madeline Miller</p>
-      <img src="achi.jpg" id="book_img"></img>
-      <p id="description">Achilles, the best of all the Greeks son of the cruel sea goddess Thetis and the legendary king Peleus, is strong, swift, and beautiful, irresistible to all who meet him. Patroclus is an awkward young prince, exiled from his homeland after an act of shocking violence. Brought together by chance, they forge an inseparable bond, despite risking the gods' wrath</p>
-      <div id="dynStars" title="it was amazing">
-      </div>
-      </div>
-
-      <div class="book1"> 
-      <p id="title">Bird Box</p> 
-      <p id="author">Josh Malerman</p>
-      <img src="box.jpg" id="book_img"></img>
-      <p id="description">it's time to go, but the journey ahead will be terrifying: twenty miles downriver in a rowboat—blindfolded—with nothing to rely on but her wits and the children's trained ears. One wrong choice and they will die. Something is following them all the while, but is it man, animal, or monster</p>
-      <div id="dynStars" title="it was amazing">
-      </div>
-      </div>    
-
-      <div class="book1"> 
-      <p id="title">Insomnia</p> 
-      <p id="author">Sarah Pinborough</p>
-      <img src="box.jpg" id="book_img"></img>
-      <p id="description">In this twisty, mind-bending thriller from the bestselling author of Behind Her Eyes, Emma Averell worries that her crippling insomnia is a sign that she’s slowly going insane—like the mother she’s worked so hard to leave in her past</p>
-      <div id="dynStars" title="it was amazing">
-      </div>
-      </div>
-
-      <div class="book1"> 
-      <p id="title">To Kill a Mockingbird</p> 
-      <p id="author">Harper Lee</p>
-      <img src="box.jpg" id="book_img"></img>
-      <p id="description">Compassionate, dramatic, and deeply moving, the book takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos.</p>
-      <div id="dynStars" title="it was amazing">
-      </div>
-      </div>
-
-      </div>
-    )
-  }
+import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"; //browser router is used for saving history.
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact"
+import StyledLink from './style';
+class App extends React.Component{
+	render(){
+		return(
+			<Router>
+				<div> <StyledLink to ="/"> Home</StyledLink></div>
+				<div> <StyledLink to ="/about"> About</StyledLink></div>
+				<div> <StyledLink to ="/contact"> Contact</StyledLink></div>
+			<Routes>
+				<Route exact path="/" element={<Home/>}/>
+				<Route path="/about" element={<About/>}/>
+				<Route path="/contact" element={<Contact/>}/>
+			</Routes>	
+			</Router>
+		)
+	}
 }
-export default Home;
+export default App;*/
+
+
+// export default Top;*/
+
+
+import './App.css';
+import React from "react";
+import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"; //browser router is used for saving history.
+import Home from "./Home";
+import Contact from "./Contact";
+import Login from "./Login";
+import My_Books from "./Books";
+import Browse from "./Browse";
+import StyledLink from './style';
+
+
+class App extends React.Component{
+	render(){
+  return(
+	<Router>
+    <div id="top_elements" class="top_elements order-last order-lg-0">
+<ul>
+<li><p class="div-link"><StyledLink to ="/"> Home</StyledLink></p></li>
+<li><p class="div-link"><StyledLink to ="/books"> My Books</StyledLink></p></li>
+<li class="dropdown"><p><span><StyledLink to ="/browse"> Browse By Genre</StyledLink></span></p>
+  <ul>
+    <li>Autobiography</li>
+    <li class="dropdown"><p><span>Fiction</span></p>
+      <ul>
+        <li>Fantasy</li>
+        <li>Literary Fiction</li>
+        <li>Romance</li>
+        <li> Thrillers</li>
+      </ul>
+    </li>
+    <li>Self help</li>
+    <li>Mystery</li>
+    <li>Poetry</li>
+  </ul>
+</li>
+<li><p class="div-link" href="#contact" ><StyledLink to ="/contact">Contact</StyledLink></p></li>
+
+<i class="bi bi-list mobile-nav-toggle"></i>
+<li><p class="sign_up-btn"><StyledLink to ="/login">Sign up or login</StyledLink></p></li>
+</ul>
+</div>
+<Routes>
+	<Route exact path="/" element={<Home/>}/>
+	<Route path="/contact" element={<Contact/>}/>
+	<Route path="/books" element={<My_Books/>}/>
+	<Route path="/browse" element={<Browse/>}/>
+	<Route path="/login" element={<Login/>}/>
+</Routes>
+</Router>
+		)
+	}
+}				
+
+export default App;
