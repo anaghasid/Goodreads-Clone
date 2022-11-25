@@ -37,6 +37,8 @@ import Login from "./Login";
 import My_Books from "./Books";
 import Browse from "./Browse";
 import StyledLink from './style';
+import LogRegPage from './LogRegPage'
+import Register from './Register';
 
 
 class App extends React.Component{
@@ -66,17 +68,18 @@ class App extends React.Component{
 <li><p class="div-link" href="#contact" ><StyledLink to ="/contact">Contact</StyledLink></p></li>
 
 <i class="bi bi-list mobile-nav-toggle"></i>
-<li><p class="sign_up-btn"><StyledLink to ="/login">Sign up or login</StyledLink></p></li>
+<li><p class="sign_up-btn"><StyledLink to ="/logreg">Sign up or login</StyledLink></p></li>
 </ul>
 </div>
 <Routes>
-				<Route exact path="/" element={<Home/>}/>
-				<Route path="/contact" element={<Contact/>}/>
-				<Route path="/books" element={<My_Books/>}/>
-				<Route path="/browse" element={<Browse/>}/>
-				<Route path="/login" element={<Login/>}/>
-				</Routes>
-				</Router>
+	<Route exact path="/" element={<Home/>}/>
+	<Route path="/contact" element={<Contact/>}/>
+	<Route path="/books" element={<My_Books/>}/>
+	<Route path="/browse" element={<Browse/>}/>
+	<Route path="/logreg" element={<Login/>}/>
+	<Route path="/register" element={<Register/>}/>
+</Routes>
+</Router>
 		)
 	}
 }				
