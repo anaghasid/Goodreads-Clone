@@ -76,8 +76,12 @@ class App extends React.Component{
 	<Route path="/contact" element={<Contact/>}/>
 	<Route path="/books" element={<My_Books/>}/>
 	<Route path="/browse" element={<Browse/>}/>
+<<<<<<< HEAD
 	<Route path="/logreg" element={<Login/>}/>
 	<Route path="/register" element={<Register/>}/>
+=======
+	<Route path="/login" element={<Login/>}/>
+>>>>>>> 97cf245b5be256e9bcda07093d8869944262950a
 </Routes>
 </Router>
 		)
