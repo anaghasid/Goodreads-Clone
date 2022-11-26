@@ -1,0 +1,50 @@
+h2{
+    margin-left:20px;
+    color:brown;
+    font-family:cursive;
+}
+.book2
+{
+   flex-direction: column;
+
+}
+
+img{
+    display:flexbox;
+    margin-left:50px;
+    width: 100px;
+}
+#_title
+{
+    margin-top: -11%;
+    margin-left: 25%;
+    display: flexbox;
+    flex-direction: column;
+    flex: 50%;
+   background-color: rgb(255, 251, 217);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 150px;
+   
+}
+
+#_Author{
+    margin-bottom: 8%;
+    margin-left: 25%;
+    display: flexbox;
+    flex-direction: column;
+    flex: 50%;
+   background-color: rgb(255, 251, 217);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 150px;
+}
+
+#_description
+{
+    background-color:rgb(255, 251, 217);
+    display:flexbox;
+    margin-left: 25%;
+    margin-top: -7%;
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
