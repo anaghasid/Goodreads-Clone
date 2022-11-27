@@ -1,5 +1,5 @@
-h2{
-    color:brown;
+h3{
+    color: whitesmoke;
     font-family:cursive;
 }
 .book1
@@ -15,12 +15,14 @@ img{
 }
 #title
 {
+    color: whitesmoke;
+    font-size:large;
     margin-top: -11%;
     margin-left: 25%;
     display: flexbox;
     flex-direction: column;
     flex: 50%;
-   background-color: rgb(255, 251, 217);
+   background-color: rgb(2, 47, 67);
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    width: 150px;
    
@@ -28,18 +30,20 @@ img{
 
 #author{
     margin-bottom: 8%;
+    color: whitesmoke;
     margin-left: 25%;
     display: flexbox;
     flex-direction: column;
     flex: 50%;
-   background-color: rgb(255, 251, 217);
+   background-color: rgb(2, 47, 67);
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    width: 150px;
 }
 
 #description
 {
-    background-color:rgb(255, 251, 217);
+    color: whitesmoke;
+    background-color:rgb(2, 47, 67);
     display:flexbox;
     margin-left: 25%;
     margin-top:-7%;
