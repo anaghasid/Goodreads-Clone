@@ -38,12 +38,12 @@
 }*/
 body
 {
-   background-color: rgb(255, 251, 217);
+   background-color: rgb(2, 47, 67);
    font-family: "Open Sans", sans-serif;
 }
 .top_elements {
 padding: 0;
-background-color: #ffbb38;
+background-color: #b7dbdb;
 
 }
 
@@ -52,7 +52,7 @@ background-color: #ffbb38;
 /* padding: 0;  */
 top: 0; 
 overflow: hidden;
-background-color: #ffbb38;
+background-color: #b7dbdb;
 display: flex;
 justify-content: center;
 list-style: none;
@@ -87,8 +87,8 @@ margin-left: 5px;
 .top_elements .active,
 .top_elements .active:focus,
 .top_elements li:hover>p {
-background-color: rgb(154, 11, 11);
-color: bisque;
+background-color: #b7dbdb;
+color: black;
 
 }
 
@@ -222,11 +222,11 @@ padding: 7px 25px 8px 25px;
 white-space: nowrap;
 font-size: 14px;
 display: inline-block;
-border: 2px solid #ffc451;
+border: 2px solid #b7dbdb;
 }
 
 .sign_up-btn:hover {
-background: #ffbb38;
+background: rgb(2, 47, 67);
 color: #343a40;
 }
 
