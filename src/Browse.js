@@ -1,5 +1,5 @@
 import React from "react";
-import "./Stars.css";
+import "./Browse.css";
 import myFavIm3 from './im1.jpg'
 import myFavIm4 from './im2.jpg'
 import myFavIm5 from './im3.jpg'
