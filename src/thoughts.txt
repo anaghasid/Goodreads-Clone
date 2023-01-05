@@ -1,0 +1,4 @@
+. Backend page /username/books
+. Default is some /default/books
+. get from these pages
+. pass bookname as props in Stars

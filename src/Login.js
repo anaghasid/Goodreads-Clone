@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 
 const Login = ({ setLoginUser}) => {
 
-    const history = useNavigate()
+    const nav = useNavigate()
 // changed from useHistory
     const [ user, setUser] = useState({
         email:"",
@@ -25,17 +25,19 @@ const Login = ({ setLoginUser}) => {
         .then(res => {
             alert(res.data.message)
             setUser(res.data.user)
-            history("/")
-            // this history is actually navigate
+            nav(`/home/${res.data.user.name}`)
+        })
+        .catch(function(err){
+            console.log(err)
         })
     }
 
     return (
         <div className="login">
-            <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your Email"></input>
-            <input type="password" name="password" value={user.password} onChange={handleChange}  placeholder="Enter your Password" ></input>
+            <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your email"></input>
+            <input type="password" name="password" value={user.password} onChange={handleChange}  placeholder="Enter your password" ></input>
             <div className="button" onClick={login}>Login</div>
-            <a style={{color:"blue"}} onClick={() => history("/register")}>Have no account yet? Sign up</a>
+            <a style={{color:"blue"}} onClick={() => nav("/register")}>Have no account yet? Sign up</a>
         </div>
     )
 }

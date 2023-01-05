@@ -34,10 +34,11 @@ import { BrowserRouter as Router,Route,Routes,Link } from "react-router-dom"; //
 import Home from "./Home";
 import Contact from "./Contact";
 import Login from "./Login";
+import Perk from "./Perk";
+import Perk2 from "./Perk2";
 import My_Books from "./Books";
 import Browse from "./Browse";
 import StyledLink from './style';
-import LogRegPage from './LogRegPage'
 import Register from './Register';
 
 
@@ -73,9 +74,13 @@ class App extends React.Component{
 </div>
 <Routes>
 	<Route exact path="/" element={<Home/>}/>
+	<Route path="/home" element={<Home/>}/>
+	<Route path="/home/:name" element={<Home/>}/>
 	<Route path="/contact" element={<Contact/>}/>
 	<Route path="/books" element={<My_Books/>}/>
 	<Route path="/browse" element={<Browse/>}/>
+	<Route path="/books/:name" element={<Perk/>}/>
+	<Route path="/bookss/:name" element={<Perk2/>}/>
 	<Route path="/logreg" element={<Login/>}/>
 	<Route path="/register" element={<Register/>}/>
 </Routes>

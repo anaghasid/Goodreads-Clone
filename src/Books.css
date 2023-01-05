@@ -1,0 +1,67 @@
+h3{
+    margin-left:20px;
+    color:whitesmoke;
+    font-family:cursive;
+}
+.book2
+{
+    display: flex;
+   flex-direction: column;
+   border: 1px solid white;
+
+}
+
+img{
+    display:flexbox; 
+    margin-left:50px;
+    width:100px;
+    height:auto;
+}
+
+#dynStars{  
+    display:flexbox;
+    height: 10px;
+    margin-left:15%;
+    flex-shrink: 0;
+
+ }
+#_title
+{
+    /* margin-top: -11%; */
+    /* margin-left: 25%; */
+    /* display: flexbox;
+    flex-direction: column; */
+    font-size: large;
+    flex: 50%;
+    margin-left:1%;
+   background-color: rgb(2,47,67);
+   color:whitesmoke;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 150px;
+   font-style: italic;
+}
+
+#_Author{
+    font-size: large;
+    margin-bottom: 7%;
+    margin-left:1%;
+    display: flexbox;
+    flex-direction: column;
+    flex: 50%;
+    color:whitesmoke;
+   background-color: rgb(2,47,67);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   width: 150px;
+}
+
+#_description
+{
+    font-size: larger;
+    color:whitesmoke;
+   background-color: rgb(2,47,67);
+    display:flexbox;
+    margin-left: 15%;
+    margin-top: -13%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}

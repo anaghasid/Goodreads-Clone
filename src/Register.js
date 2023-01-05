@@ -43,7 +43,6 @@ const Register = () => {
 
     return (
         <div className="login">
-            {console.log("User", user)}
             <h1>Register</h1>
             <input type="text" name="name" value={user.name} placeholder="Name" onChange={ handleChange }></input>
             <input type="text" name="email" value={user.email} placeholder="Email" onChange={ handleChange }></input>
